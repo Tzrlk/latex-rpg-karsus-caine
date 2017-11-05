@@ -4,7 +4,8 @@ addons:
     packages:
       - texlive-latex-extra
 
-script: ./build.sh
+before_script: chmod +x build.sh
+script:        ./build.sh
 
 deploy:
   provider:     releases
