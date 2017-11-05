@@ -1,0 +1,20 @@
+sudo: true
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install texlive-latex-extra
+
+script:
+  - mkdir _build
+  - pdflatex -output-directory _build *.tex
+
+deploy:
+  provider:     releases
+  skip_cleanup: true
+  file:         _build/*.pdf
+  api_key:
+    secure: ???
+  on:
+    tags:   true
+    branch: master
+
