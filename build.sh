@@ -4,7 +4,7 @@
 mkdir -p _build
 
 # Run latex on all tex files.
-for file in *.tex; do
+for file in $(find src -name *.tex); do
 	pdflatex \
 		-include-directory lib \
 		-output-directory _build \
