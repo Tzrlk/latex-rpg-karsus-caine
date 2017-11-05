@@ -1,5 +1,7 @@
 # Karsus Caine
 
+[![Build Status](https://travis-ci.org/Tzrlk/latex-rpg-karsus-caine.svg?branch=master)](https://travis-ci.org/Tzrlk/latex-rpg-karsus-caine)
+
 These are latex materials for an rpg character.
 
 ## Usage
