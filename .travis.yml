@@ -4,11 +4,7 @@ addons:
     packages:
       - texlive-latex-extra
 
-before_script:
-  - mkdir _build
-
-script:
-  - pdflatex -output-directory _build *.tex
+script: ./build.sh
 
 deploy:
   provider:     releases
