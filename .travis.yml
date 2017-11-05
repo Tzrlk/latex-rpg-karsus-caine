@@ -1,4 +1,3 @@
-sudo: true
 
 before_install:
   - sudo apt-get update
@@ -13,7 +12,7 @@ deploy:
   skip_cleanup: true
   file:         _build/*.pdf
   api_key:
-    secure: ???
+    secure: ZCkqsbOSX+43GSd2UYYg41DxBGXlJ86+QlOopmJDDjBgXE8EO1ySRnIbB0BtUq6HF3AwbqpXqC4XsgcYHkFukbZl/mG+Vdw1iDMYWNzL69p6ehQrWL73cJMlTq8t067R/t34NDReP6wBh1hMjJPWsrJpKc1/WcG+ZiSVjjo/tteLCySAJlikak6LC43u44958NecYvQOknhXNIh6azlvzQ9aJNJnsmuuXWbVdHGKr/yjcI4epD0dCLNEIfFnM8MIY3OyE6z0BuxRIwlBdhZ2WETjiW8tD21/1EZM/DCgwdFEi8wTcuIb5whrBCsK5q5y82hnlQn/YKG+JQGTYxSbokXbtF7rV2VC94u6dAJppKk9yznSJATpOMef1favM5t1HkyXZq7nDBcndqtmqfal97nm6u1EIMHFHs5EotEBrUspUW4fDBCKACDGULEkkNTnvNIsqbGRD2C7rEq/Kv4mI77Ixj95kZZNQ1C3khz7Yc7SLZe2OXr43dh3XfybZotwD/vNEJLe3Avj0LCtET1ykbUk0RtDhz9ocstBEOoxaamRkx0DqbkDRbcv2SnRHQW1ODu9otcfWAfd0to4AnwolzZKPdQ3CBuedjtB6zvv/KpVvh5SmFTQfba4tSXyuy7NF/YWhzCLADcntmKQrH1C4ypw5q/RPYL5y+ouAagTm4Y=
   on:
     tags:   true
     branch: master
